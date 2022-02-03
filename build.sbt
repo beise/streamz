@@ -21,6 +21,11 @@ ThisBuild / libraryDependencies  ++= Seq(
   "org.scalatest" %% "scalatest-shouldmatchers" % Version.Scalatest % "test",
 )
 
+//Don't turn warnings to errors for subproject camelAkka, because streamz using a camel deprecated api.
+//Compiler-settings come from sbt-tpolecat plugin (https://github.com/DavidGregory084/sbt-tpolecat)
+//"-Wconf:cat=deprecation:w,cat=unused-imports:w,any:e",
+camelAkka / Compile / scalacOptions --= Seq("-Xfatal-warnings","-Werror")
+
 // No need for `sbt doc` to fail on warnings
 val docSettings = Compile / doc / scalacOptions -= "-Xfatal-warnings"
 
