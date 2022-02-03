@@ -1,6 +1,6 @@
 object Version {
-  val Akka = "2.6.9"
-  val Camel = "2.20.4"
+  val Akka = "2.6.18"
+  val Camel = "2.25.4"
   val CatsEffect = "2.2.0"
   val Config = "1.4.0"
   val Fs2 = "2.4.4"
