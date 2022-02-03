@@ -8,5 +8,5 @@ object Version {
   val Log4j = "2.13.0"
   val ScalaCollectionCompat = "2.2.0"
   val Scalatest = "3.2.0"
-  val Silencer = "1.7.1"
+  val Silencer = "1.7.8"
 }
