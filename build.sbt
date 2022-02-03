@@ -14,7 +14,7 @@ ThisBuild / versionScheme := Some("early-semver")
 ThisBuild / licenses += "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
 
 ThisBuild / crossScalaVersions := Seq("2.12.12", "2.13.3")
-ThisBuild / scalaVersion := "2.13.3"
+ThisBuild / scalaVersion := "2.13.8"
 
 ThisBuild / libraryDependencies  ++= Seq(
   "org.scalatest" %% "scalatest-wordspec" % Version.Scalatest % "test",
