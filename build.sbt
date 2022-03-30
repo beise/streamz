@@ -21,6 +21,8 @@ ThisBuild / libraryDependencies  ++= Seq(
   "org.scalatest" %% "scalatest-shouldmatchers" % Version.Scalatest % "test",
 )
 
+ThisBuild / Keys.useCoursier := false
+
 //Don't turn warnings to errors for subproject camelAkka, because streamz using a camel deprecated api.
 //Compiler-settings come from sbt-tpolecat plugin (https://github.com/DavidGregory084/sbt-tpolecat)
 //"-Wconf:cat=deprecation:w,cat=unused-imports:w,any:e",
