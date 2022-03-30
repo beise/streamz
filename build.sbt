@@ -85,7 +85,7 @@ lazy val converter = project.in(file("streamz-converter"))
   .enablePlugins(AutomateHeaderPlugin)
   .settings(headerSettings, docSettings)
 
-lazy val examples = project.in(file("streamz-examples"))
+/*lazy val examples = project.in(file("streamz-examples"))
   .enablePlugins(AutomateHeaderPlugin)
   .settings(headerSettings, docSettings)
-  .dependsOn(camelAkka, camelFs2, converter)
+  .dependsOn(camelAkka, camelFs2, converter)*/
