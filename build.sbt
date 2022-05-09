@@ -59,13 +59,21 @@ lazy val headerSettings = Seq(
 //  Projects
 // ---------------------------------------------------------------------------
 
-lazy val root = project.in(file("."))
+/*lazy val root = project.in(file("."))
   .aggregate(camelContext, camelAkka, camelFs2, converter, examples)
   .settings(
     ScalaUnidoc / unidoc / unidocProjectFilter := inAnyProject -- inProjects(examples),
     docSettings
   )
+  .enablePlugins(ScalaUnidocPlugin)*/
+
+lazy val root = project.in(file("."))
+  .aggregate(camelContext, camelAkka)
+  .settings(
+    docSettings
+  )
   .enablePlugins(ScalaUnidocPlugin)
+
 
 lazy val camelContext = project.in(file("streamz-camel-context"))
   .enablePlugins(AutomateHeaderPlugin)
